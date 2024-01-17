@@ -103,15 +103,15 @@ print('Done computing tem and den')
 end = time.time()
 print('time for ANN method: {:1f} s.'.format(end - start))
 
-#pickle.dump(tem_ns, open('tem_ns.pkl', 'wb'))
-#pickle.dump(tem_nc, open('tem_nc.pkl', 'wb'))
+pickle.dump(tem_ns, open('tem_ns.pkl', 'wb'))
+pickle.dump(tem_nc, open('tem_nc.pkl', 'wb'))
 
-#pickle.dump(den_ns, open('den_ns.pkl', 'wb'))
-#pickle.dump(den_nc, open('den_nc.pkl', 'wb'))
-#
-#pickle.dump(tem_ss, open('tem_ss.pkl', 'wb'))
-#pickle.dump(tem_sc, open('tem_sc.pkl', 'wb'))
-#
-#pickle.dump(den_ss, open('den_ss.pkl', 'wb'))
-#pickle.dump(den_sc, open('den_sc.pkl', 'wb'))
+pickle.dump(den_ns, open('den_ns.pkl', 'wb'))
+pickle.dump(den_nc, open('den_nc.pkl', 'wb'))
+
+pickle.dump(tem_ss, open('tem_ss.pkl', 'wb'))
+pickle.dump(tem_sc, open('tem_sc.pkl', 'wb'))
+
+pickle.dump(den_ss, open('den_ss.pkl', 'wb'))
+pickle.dump(den_sc, open('den_sc.pkl', 'wb'))
 print('Done saving data')
