@@ -73,11 +73,11 @@ den_nc = np.zeros((295,353))
 label     = ['Halpha', 'Hbeta','[NII]', '[NII]', '[SII]',  '[SII]', '[ClIII]', '[ClIII]', '[SIII]', '[SIII]']   
 line_list = [6562.8,    4861.32, 5754.64, 6548.04, 6730.82, 6716.44,  5517.71,   5537.88,  6312.06,  9068.60]  
 
-# test it with one pixel
-n=50
-m=100
-q=50
-r=150
+# cube ranges
+n=1
+m=294
+q=1
+r=353
 
 print('Start tem and den computation')
 start = time.time()
@@ -109,9 +109,4 @@ pickle.dump(tem_nc, open('tem_nc.pkl', 'wb'))
 pickle.dump(den_ns, open('den_ns.pkl', 'wb'))
 pickle.dump(den_nc, open('den_nc.pkl', 'wb'))
 
-pickle.dump(tem_ss, open('tem_ss.pkl', 'wb'))
-pickle.dump(tem_sc, open('tem_sc.pkl', 'wb'))
-
-pickle.dump(den_ss, open('den_ss.pkl', 'wb'))
-pickle.dump(den_sc, open('den_sc.pkl', 'wb'))
 print('Done saving data')
